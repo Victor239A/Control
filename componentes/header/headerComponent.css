@@ -1,20 +1,32 @@
 .headercontenedor {
-    display: flex;
+    display: grid;
     align-items: center;
-    background-color: gray;
     height: 50px;
-    justify-content: space-between;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    padding: 0 2rem;
 }
 
 .header-circulo {
-    width: 40px;
-    height: 40px;
-    background-color: #3498db;
-    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid rgb(0, 0, 0);
+    
     
 }
 
 
 .header-texto {
-    font-size: 20px;
+    font-size: 2rem;
+}
+
+
+.imagen {
+
+    width: 3.6rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
 }
