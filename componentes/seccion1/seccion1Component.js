@@ -14,3 +14,5 @@ export function seccion1(){
     
 
 }
+
+//Poner un titulo al cuadro, una imagen y un texto descriptivo (pueden ser los mismos en los 4)
