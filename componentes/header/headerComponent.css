@@ -6,14 +6,15 @@
     align-items: center;
     border-bottom: 2px solid gray;
     padding: 0 2rem;
+    background-color: rgb(181, 180, 180);
 }
 
 .header-circulo {
     width: 4rem;
     height: 4rem;
     border: 2px solid rgb(0, 0, 0);
-    
-    
+
+
 }
 
 
