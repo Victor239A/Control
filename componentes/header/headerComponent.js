@@ -17,6 +17,16 @@ function header() {
     header.appendChild(div);  
     div.appendChild(img); 
 
+
+    header.addEventListener('click', ()=>{
+        header.classList.add("verde");
+        let rHeader = document.querySelector('.header');
+        rHeader.classList.add('verde');
+       
+        });
+    
+    
+
     return header;
 }
 

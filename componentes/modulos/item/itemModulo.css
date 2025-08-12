@@ -1,17 +1,30 @@
 .item {
-   width: 20rem;
-   height: 20rem;
-   background-color: rgb(134, 15, 15);
+   width: 30rem;
+   height: 30rem;
+   background-color: rgb(179, 169, 169);
+   border-radius: 3px;
+   box-shadow: 5px px 10px black;
    
- 
+   
 }
 
-.cartman{
-   width: 50%;
-   height: 50%;
-   display: flex;
-   margin: auto ;
-   margin-top: 1rem;
+.imagenn{
+width: 80%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-left: 5rem;
+
 
 }
-.titulo1
+
+
+.verde {
+   
+   background-color: green;
+   display: none;
+
+}
+
+
+

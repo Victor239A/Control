@@ -12,3 +12,8 @@ html {
 .titulo {
     color: rebeccapurple;
 }
+
+
+.ocultar {
+    display: none;
+}

@@ -1,12 +1,13 @@
 .headercontenedor {
     display: grid;
     align-items: center;
-    height: 50px;
+    height: 80px;
     grid-template-columns: 1fr auto;
     align-items: center;
     border-bottom: 2px solid gray;
     padding: 0 2rem;
     background-color: rgb(181, 180, 180);
+
 }
 
 .header-circulo {
@@ -23,11 +24,14 @@
 }
 
 
-.imagen {
+.imagen {   
 
     width: 3.6rem;
     height: 3.5rem;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 1rem;
+   
+    
+   
+   
 }
