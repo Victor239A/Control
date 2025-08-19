@@ -1,23 +1,39 @@
-export function item(titulo,urlImg) {
+export function item(title, image, description, price) {
+  let contenedor = document.createElement("div");
+  contenedor.className = "item";
 
-    let item = document.createElement('div');
-    item.className = "item";
-  item.textContent= titulo;
+   // id
+   let id = document.createElement("h3");
+   id.className="id";
+   id.textContent = id;
+ 
+  // título
+  let titulo = document.createElement("h3");
+  titulo.className="title";
+  titulo.textContent = title;
 
-  let img = document.createElement('img');
-  img.src = urlImg;
-  img.className = "imagenn";
-  item.appendChild(img);
-   
-    item.addEventListener('click', ()=>{
-    item.classList.add("verde");
-    let rHeader = document.querySelector('.header');
-    rHeader.classList.add('verde');
-   
-    });
+  // imagen
+  let img = document.createElement("img");
+  img.className="img1";
+  img.src = image;
+  img.alt = title;
+
+  // descripción
+  let desc = document.createElement("p");
+  desc.textContent = description;
+  desc.className="desc";
+
+  // precio
+  let precio = document.createElement("p");
+  precio.textContent = `Precio: $${price}`;
+  precio.className="price"
 
 
-    return item;
+  contenedor.appendChild(id);
+  contenedor.appendChild(titulo);
+  contenedor.appendChild(img);
+  contenedor.appendChild(desc);
+  contenedor.appendChild(precio);
 
+  return contenedor;
 }
-

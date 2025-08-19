@@ -1,30 +1,55 @@
-.item {
-   width: 30rem;
-   height: 30rem;
-   background-color: rgb(179, 169, 169);
-   border-radius: 3px;
-   box-shadow: 5px px 10px black;
-   
-   
-}
-
-.imagenn{
-width: 80%;
+.item{
+   background-color: rgb(255, 255, 255);
+height: 500px;
+width: 400px;
 display: flex;
 align-items: center;
 justify-content: center;
-padding-left: 5rem;
+flex-direction: column;
+   border-radius: 10px; 
+   gap: 1rem;
+   border: 2px solid black;
+}
 
+.title
+{
+   font-size: 1rem;
+padding: 1rem;
+   color: rgb(0, 0, 0);
+}   
+
+.img1 {
+ width: 30%;
 
 }
 
+.text {
+   font-size: 12px;
+   margin-left: 5px;
+   color: rgb(241, 202, 202);
+}
 
-.verde {
-   
+
+.verde{
    background-color: green;
-   display: none;
-
 }
 
+.desc{
+   color: rgb(0, 0, 0);
+   padding: 1rem;
+}
 
+.price{
+   font-size: 1.5rem;
+   color: rgb(179, 165, 165);
+   font-weight: 600;
+}
 
+.section {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr); 
+   gap: 20px;                             
+   padding: 20px;
+   justify-items: center;                  
+ }
+ 

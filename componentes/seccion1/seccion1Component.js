@@ -1,12 +1,15 @@
-import { item } from '../modulos/item/itemModulo.js';
-import { productos } from "../../database/productos.js"; 
+import { item } from "../modulos/item/itemModulo.js";
+import { productos } from "../../database/productos.js";
+
 
 export function seccion1() {
-    let seccion = document.createElement('section'); 
-    seccion.className = "seccion1";
+    let seccion = document.createElement('div');
+    seccion.className = "section";
 
-    productos.forEach(element => {
-        seccion.appendChild(item(element.description, element.image));
+
+
+    productos.forEach(elemento => {
+        seccion.appendChild(item(elemento.title, elemento.image,elemento.description, elemento.price, elemento.id));
     });
 
     return seccion;
