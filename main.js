@@ -1,5 +1,7 @@
 import { header } from "./componentes/header/headerComponent.js";
 import { seccion1 } from "./componentes/seccion1/seccion1Component.js";
+import { nav } from "./navComponentes/navComponentes.js";
+
 
 function seccion() {
     
@@ -9,6 +11,9 @@ function seccion() {
 
    //seccion 
    seccion.appendChild(seccion1());
+
+
+   seccion.appendChild(nav());
   
    return seccion;
    

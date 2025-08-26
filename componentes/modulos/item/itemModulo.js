@@ -2,11 +2,7 @@ export function item(title, image, description, price) {
   let contenedor = document.createElement("div");
   contenedor.className = "item";
 
-   // id
-   let id = document.createElement("h3");
-   id.className="id";
-   id.textContent = id;
- 
+  
   // título
   let titulo = document.createElement("h3");
   titulo.className="title";
@@ -29,7 +25,7 @@ export function item(title, image, description, price) {
   precio.className="price"
 
 
-  contenedor.appendChild(id);
+ 
   contenedor.appendChild(titulo);
   contenedor.appendChild(img);
   contenedor.appendChild(desc);
