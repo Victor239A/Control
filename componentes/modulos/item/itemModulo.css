@@ -31,7 +31,7 @@ padding: 1rem;
 
 
 .verde{
-   background-color: green;
+   display: none;
 }
 
 .desc{
@@ -50,7 +50,8 @@ padding: 1rem;
    grid-template-columns: repeat(2, 1fr); 
    gap: 20px;                             
    padding: 20px;
-   justify-items: center;                  
+   justify-items: center;  
+   padding-bottom: 125px;                
  }
  
 
@@ -58,7 +59,7 @@ padding: 1rem;
 @media (max-width: 768px) {
    .item {
        max-width: 16rem;   
-       min-height: 65rem;  
+       min-height: 60rem;  
        padding: 10px;
    }
 

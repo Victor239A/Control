@@ -7,29 +7,38 @@ export function item(title, image, description, price) {
   let titulo = document.createElement("h3");
   titulo.className="title";
   titulo.textContent = title;
+  contenedor.appendChild(titulo);
 
   // imagen
   let img = document.createElement("img");
   img.className="img1";
   img.src = image;
   img.alt = title;
+  contenedor.appendChild(img);
 
   // descripción
   let desc = document.createElement("p");
   desc.textContent = description;
   desc.className="desc";
+  contenedor.appendChild(desc);
 
   // precio
   let precio = document.createElement("p");
   precio.textContent = `Precio: $${price}`;
-  precio.className="price"
-
-
- 
-  contenedor.appendChild(titulo);
-  contenedor.appendChild(img);
-  contenedor.appendChild(desc);
+  precio.className="price";
   contenedor.appendChild(precio);
 
+
+  contenedor.addEventListener('click', ()=>{
+    let listaDeCompras = localStorage.getItem("carritolista");
+   if(!listaDeCompras) {
+    listaDeCompras = [];
+    localStorage.setItem("carrito",JSON.stringify(listaDeCompras));
+   } else {
+    listaDeCompras = JSON.parse(listaDeCompras);
+   }
+   console.log(listaDeCompras);
+  });
+  
   return contenedor;
 }
