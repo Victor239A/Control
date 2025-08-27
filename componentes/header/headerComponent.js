@@ -4,7 +4,7 @@ function header() {
 
     let text = document.createElement('h1'); 
     text.className = "header-texto";
-    text.innerText = "@Victor239A";
+    text.innerText = "Tienda";
     
     let div = document.createElement('div');
     div.className = "header-circulo";
